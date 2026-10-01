@@ -420,6 +420,38 @@ h3 {
     font-weight: 700;
 }
 
+.map-card {
+    min-width: 0;
+    padding: var(--md);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--large);
+    box-shadow: var(--shadow);
+}
+
+.map-heading h2 {
+    margin-bottom: var(--md);
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.location-map {
+    display: block;
+    width: 100%;
+    min-height: 18rem;
+    border: 0;
+    border-radius: var(--radius);
+}
+
+.map-link {
+    margin: var(--sm) 0 0;
+    font-size: .9rem;
+}
+
+.map-link a {
+    color: var(--blue);
+    font-weight: 700;
+}
+
 .form-wrapper {
     min-width: 0;
     padding: var(--md);
@@ -604,6 +636,10 @@ h3 {
     .contact-layout {
         grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr);
         align-items: start;
+    }
+
+    .contact-layout .form-wrapper {
+        grid-column: 1 / -1;
     }
 
 }
